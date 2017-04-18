@@ -106,7 +106,8 @@ function submitAnswer() {
   y = document.getElementById("D-answer");
   z = document.getElementById("N-answer");
   
-// Matching answer with question and updating scores
+  if(x.checked || y.checked || z.checked){
+ // Matching answer with question and updating scores
   
   if (x.checked) {
     if (randomQuesType === 0) {
@@ -180,7 +181,9 @@ function submitAnswer() {
       resetRadio();
     }
   
+  }   
   }
+
 }
 
 // Score updating functions
