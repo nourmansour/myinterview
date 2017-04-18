@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,600" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+        <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
+        <link type="text/css" rel="stylesheet" href="style.css">
+        
+        <title>My Spirent Communications Interview</title>
+    </head>
+
+    <body>
+        <div class="wrapper clearfix">
+            <div class="player-0-panel active">
+                <div class="player-name" id="name-0">Nour</div>
+              <img src="nour_no_speech.png" class="nour-pic">
+              <img src="got_it.png" class="win-pic">
+              <img src="half.png" class="almost-pic">
+              <img src="lose_cat.png" class="lose-pic">
+              <img src="spirent_logo.jpg" class="spirent-pic">
+                <div class="player-current-box">
+                    <div class="player-current-label">stress level</div>
+                    <div class="player-current-score" id="current-0">50</div>
+                </div>
+            </div>
+            
+            <div class="player-1-panel">
+                <div class="interviewer-name" id="name-1">interviewer</div>
+              <img src="interviewer_no_speech.png" class="interviewer-pic">
+                <div class="interviewer-current-box">
+                    <div class="player-current-label">appreciation</div>
+                    <div class="player-current-score" id="current-1">50</div>
+                </div>
+            </div>
+            <button class="start-game"><i class="ion-ios-plus-outline"></i>Start Game</button>
+            <button class="new-game"><i class="ion-ios-plus-outline"></i>New Game</button>
+            <button class="submit-answer"><i class="ion-ios-loop"></i>Submit Answer</button>
+            <button class="cat-powerup"><i class="ion-ios-download-outline"></i>Cat Power-up</button>
+            <p class="question">text<br><br></p>
+            <p class="welcome-message">Welcome to Nour's interview at Spirent Communications! This game is a representation of what I imagine it will be like to go through an interview with you! Here are the rules for this realistic simulation:<br><br>1. The interviewer will ask questions pertaining to my skills, and I need your help to answer these questions accurately!<br><br>2. When I answer correctly, my stress level decreases by 15 points and the interviewer's appreciation level increases by 15 points, and vice versa.<br><br>3. The game ends when questions run out or when interviewer appreciation reaches 0 or 100!<br><br>Please click Start Game and help me nail this interview!</p>
+            <p class="win" id = "win-msg">I win! We did really well this interview!</p>
+            <p class="lose">I lose! Better try again!</p>
+            <p class="almost">Almost there! Try again Later!</p>
+            <form class="radio-answer">
+              <input type="radio" id = "P-answer" name="answer" value="Programming answer:"> <label for="P-answer" id="AnswerP">Programming answer:</label><br><br>
+              <input type="radio" id = "D-answer" name="answer" value="Documentation answer:"> <label for="D-answer" id="AnswerD">Documentation answer:</label> <br><br>
+              <input type="radio" id = "N-answer"name="answer" value="No answer:"> I don't know... <br></form>
+          <!--<p alt="Dice" class="dice">Question 1: How do you do?<br></p>-->
+            <!--<img src="dice-5.png" alt="Dice" class="dice">-->
+        </div>
+        
+        <script src="simple.js"></script>
+    </body>
+</html>
